@@ -69,27 +69,66 @@
 //     return count;
 // }
 
-// Задача А
+// // Задача А
 
-Console.WriteLine("Текст перед первым разделителем");
-    PrintDivider();
+// Console.WriteLine("Текст перед первым разделителем");
+//     PrintDivider();
 
-Console.WriteLine("Текст перед вторым разделителем");
-    PrintDivider();
+// Console.WriteLine("Текст перед вторым разделителем");
+//     PrintDivider();
 
-Console.WriteLine("Текст перед третьим разделителем");
-    PrintDivider();
+// Console.WriteLine("Текст перед третьим разделителем");
+//     PrintDivider();
     
-static void PrintDivider() {
-    Console.WriteLine("========================================");
-}
+// static void PrintDivider() {
+//     Console.WriteLine("========================================");
+// }
 
-// Задача Б
+// // Задача Б
 
-PrintPerson("Иван", 20);
-PrintPerson("Даня", 18);
-PrintPerson("Илюша", 25);
+// PrintPerson("Иван", 20);
+// PrintPerson("Даня", 18);
+// PrintPerson("Илюша", 25);
 
-static void PrintPerson(string name, int age) {
-    Console.WriteLine($"Человек: {name}, возраст: {age} лет");
+// static void PrintPerson(string name, int age) {
+//     Console.WriteLine($"Человек: {name}, возраст: {age} лет");
+// }
+
+
+
+
+// Вариант 1
+
+Console.WriteLine("Вариант 1. void PrintSeparator()");
+Console.WriteLine();
+
+Console.WriteLine("Первый банан");
+PrintSeparator();
+
+Console.WriteLine("Второй банан");
+PrintSeparator();
+
+Console.WriteLine("Третий банан");
+PrintSeparator();
+        
+Console.WriteLine("Четвертый банан");
+
+    static void PrintSeparator() {
+        Console.WriteLine("=========================================");
+    }
+
+// Вариант 2
+
+Console.WriteLine();
+Console.WriteLine("Вариант 2. double CalculateArea(double width, double height)");
+Console.WriteLine();
+
+double area1 = CalculateArea(5.5, 4.0);
+Console.WriteLine($"Площадь первого прямоугольника: {area1}");
+double area2 = CalculateArea(10.2, 3.5);
+Console.WriteLine($"Площадь второго прямоугольника: {area2}");
+    
+
+static double CalculateArea(double width, double height) {
+    return width * height;
 }
