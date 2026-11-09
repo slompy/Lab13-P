@@ -25,46 +25,71 @@
 // PrintStudentCard("Валерия", 17, "ИСП-267");
 
 
-double baseScholarship = 2000;
-double currentAverageGrade = 4.6; 
+// double baseScholarship = 2000;
+// double currentAverageGrade = 4.6; 
 
-if (IsEligibleForBonus(currentAverageGrade)) {
-    double result = CalculateScholarship(baseScholarship, 15);
-    Console.WriteLine($"Стипендия с надбавкой: {result}");
-} else {
-    double result = CalculateScholarship(baseScholarship, 0);
-    Console.WriteLine($"Обычная стипендия: {result}");
+// if (IsEligibleForBonus(currentAverageGrade)) {
+//     double result = CalculateScholarship(baseScholarship, 15);
+//     Console.WriteLine($"Стипендия с надбавкой: {result}");
+// } else {
+//     double result = CalculateScholarship(baseScholarship, 0);
+//     Console.WriteLine($"Обычная стипендия: {result}");
+// }
+
+// double CalculateScholarship(double baseAmount, double bonusPercent) {
+//     return baseAmount + baseAmount * bonusPercent / 100;
+// }
+
+// bool IsEligibleForBonus(double averageGrade) {
+//     return averageGrade >= 4.5;
+// }
+
+// int[] grades = { 4, 5, 3, 5, 4 };
+// double average = CalculateAverageGrade(grades);
+// Console.WriteLine($"Средний балл: {average}");
+
+// int fivesCount = CountFives(grades);
+// Console.WriteLine($"Количество пятерок в массиве: {fivesCount}");
+
+// double CalculateAverageGrade(int[] grades) {
+//     int sum = 0;
+//     foreach (int grade in grades) {
+//         sum += grade;
+//     }
+//     return (double)sum / grades.Length;
+// }
+
+// int CountFives(int[] grades) {
+//     int count = 0;
+//     foreach (int grade in grades) {
+//         if (grade == 5) {
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+
+// Задача А
+
+Console.WriteLine("Текст перед первым разделителем");
+    PrintDivider();
+
+Console.WriteLine("Текст перед вторым разделителем");
+    PrintDivider();
+
+Console.WriteLine("Текст перед третьим разделителем");
+    PrintDivider();
+    
+static void PrintDivider() {
+    Console.WriteLine("========================================");
 }
 
-double CalculateScholarship(double baseAmount, double bonusPercent) {
-    return baseAmount + baseAmount * bonusPercent / 100;
-}
+// Задача Б
 
-bool IsEligibleForBonus(double averageGrade) {
-    return averageGrade >= 4.5;
-}
+PrintPerson("Иван", 20);
+PrintPerson("Даня", 18);
+PrintPerson("Илюша", 25);
 
-int[] grades = { 4, 5, 3, 5, 4 };
-double average = CalculateAverageGrade(grades);
-Console.WriteLine($"Средний балл: {average}");
-
-int fivesCount = CountFives(grades);
-Console.WriteLine($"Количество пятерок в массиве: {fivesCount}");
-
-double CalculateAverageGrade(int[] grades) {
-    int sum = 0;
-    foreach (int grade in grades) {
-        sum += grade;
-    }
-    return (double)sum / grades.Length;
-}
-
-int CountFives(int[] grades) {
-    int count = 0;
-    foreach (int grade in grades) {
-        if (grade == 5) {
-            count++;
-        }
-    }
-    return count;
+static void PrintPerson(string name, int age) {
+    Console.WriteLine($"Человек: {name}, возраст: {age} лет");
 }
